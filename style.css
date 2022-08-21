@@ -220,3 +220,167 @@ p {
     margin-bottom: 0.4rem;
 }
 
+.about-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 7rem;
+}
+
+.about-photo {
+    max-width: 50%;
+    padding-left: 3.5rem;
+}
+
+.about-content {
+    width: 50%;
+    margin-top: 5rem;
+    padding-left: 7.5rem;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.about-bigtitle {
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: var(--gray-light);
+    text-transform: uppercase;
+}
+
+.about-text {
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.reviews {
+    background: #332f30 url('images/reviews.png') center no-repeat;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.reviews-inner {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.reviews-text {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+.reviews-author {
+    width: 100%;
+    margin-top: -51px;
+
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews-company {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.reviews-name {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.reviews-star-unactive {
+    opacity: 0.3;
+}
+
+.reviews-rating {
+    margin-bottom: 6rem;
+}
+
+.courses {
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+}
+
+.subtitle {
+    text-align: center;
+
+    font-size: 1.1rem;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+.margin {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.courses-inner {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 33.33%;
+    padding: 0 1rem;
+    
+}
+
+.course-name {
+    margin-top: 1.3rem;
+
+    font-size: 1.1rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.course-cat {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.course-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.btn-edit {
+    width: 130px;
+    height: 34px;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    padding: 0.5rem 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.link {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.course-link {
+    font-size: 0.9rem;
+    color: var(--gray);
+    
+}
