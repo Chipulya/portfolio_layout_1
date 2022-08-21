@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,10 +20,10 @@
                     </div>
                 </div>
 
-                <div class="nav">
-                    <a class="nav-link" href="#">WORK</a>
-                    <a class="nav-link" href="#">ABOUT ME</a>
-                    <a class="nav-link" href="#">BLOG</a>
+                <div class="nav" id="nav">
+                    <a class="nav-link" href="#" data-scroll="#work">WORK</a>
+                    <a class="nav-link" href="#" data-scroll="#about">ABOUT ME</a>
+                    <a class="nav-link" href="#" data-scroll="#blog">BLOG</a>
                     <a class="nav-link" href="#">CONTACT</a>
                 </div>
             </div>
@@ -66,13 +67,13 @@
     </div>
 
 
-    <div class="works">
+    <div class="works" id="work">
         <div class="container">
             <h3 class="text-center">MY WORKS</h3>
 
             <div class="portfolio">
                 <div class="work">
-                    <img src="images/work_logo.png" alt="">
+                    <img class="work-photo" src="images/work_logo.png" alt="">
                     <div class="work-content">
                         <div class="work-cat">category: website</div>
                         <div class="work-title">
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work_logo.png" alt="">
+                    <img class="work-photo" src="images/work_logo.png" alt="">
                     <div class="work-content">
                         <div class="work-cat">category: website</div>
                         <div class="work-title">
@@ -92,7 +93,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work_logo.png" alt="">
+                    <img class="work-photo" src="images/work_logo.png" alt="">
                     <div class="work-content">
                         <div class="work-cat">category: website</div>
                         <div class="work-title">
@@ -106,7 +107,7 @@
     </div>
 
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="about-inner">
                 <img class="about-photo" src="images/designer_photo.png" alt="">
@@ -152,14 +153,14 @@
         </div>
     </div>
 
-    <div class="courses">
+    <div class="courses" id="blog">
         <div class="container">
             <h3 class="text-center margin">My courses</h3>
             <div class="subtitle">I am an instructor and teach students all over the world.</div>
         
             <div class="courses-inner">
                 <div class="course">
-                    <img src="images/Angular logo.png" alt="">
+                    <img class="course-photo" src="images/Angular logo.png" alt="">
 
                     <div class="course-content">
                         <h4 class="course-name">ANGULAR. PRACTICAL COURSE</h4>
@@ -172,7 +173,7 @@
                     <a href="#"><button class="btn btn-edit">SHOW MORE</button></a>
                 </div>
                 <div class="course">
-                    <img src="images/Angular logo.png" alt="">
+                    <img class="course-photo" src="images/Angular logo.png" alt="">
 
                     <div class="course-content">
                         <h4 class="course-name">ANGULAR. PRACTICAL COURSE</h4>
@@ -185,7 +186,7 @@
                     <a href="#"><button class="btn btn-edit">SHOW MORE</button></a>
                 </div>
                 <div class="course">
-                    <img src="images/Angular logo.png" alt="">
+                    <img class="course-photo" src="images/Angular logo.png" alt="">
 
                     <div class="course-content">
                         <h4 class="course-name">ANGULAR. PRACTICAL COURSE</h4>
@@ -203,5 +204,33 @@
             </div>
         </div>
     </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-info">
+                    <div class="footer-copyright">
+                        &copy; 2020 - Dominik Kuzmicki
+                    </div>
+                    <div class="footer-social">
+                        <a class="footer-link" href="#"><img src="images/linkedin_icon.png" alt=""></a>
+                        <a class="footer-link" href="#"><img src="images/facebook_icon.png" alt=""></a>
+                        <a class="footer-link" href="#"><img src="images/instagram_icon.png" alt=""></a>
+                        <a class="footer-link" href="#"><img src="images/twitter_icon.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <a class="footer-nav-link" href="#" data-scroll="#work">WORK</a>
+                    <a class="footer-nav-link" href="#" data-scroll="#about">ABOUT ME</a>
+                    <a class="footer-nav-link" href="#" data-scroll="#blog">BLOG</a>
+                    <a class="footer-nav-link" href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
